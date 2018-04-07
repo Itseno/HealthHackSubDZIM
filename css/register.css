@@ -63,11 +63,14 @@ input::-webkit-input-placeholder {
 }
 
 .login-button{
-	margin-top: 5px;
+	margin-top: 0.5px;
+  border-color: black;
+  background-color: #66CD00;
 }
 
 .login-register{
-	font-size: 11px;
+	font-size: 12px;
+  color: white;
 	text-align: center;
 }
 
