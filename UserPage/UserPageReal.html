@@ -9,11 +9,16 @@
   <meta name="author" content="">
   <title>SB Admin - Start Bootstrap Template</title>
   <!-- Bootstrap core CSS-->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+
+
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -231,8 +236,16 @@
       <div class="row">
         <div class="col-12">
           <!--Info Here-->
+          <script>
+              $(function() {
+                $("#datepicker" ).datepicker({ minDate: -7, maxDate: "+10Y" });
+                $("#datepicker").datepicker("setDate",new Date());
+                $("#datepicker" ).datepicker( "option", "dateFormat", "mm/dd/yy");
+              });
+          </script>
           <h1>Blank</h1>
           <p>This is an example of a blank page that you can use as a starting point for creating new ones.</p>
+          <p><input type="text" id="datepicker" /></p>
         </div>
       </div>
     </div>
