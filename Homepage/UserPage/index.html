@@ -162,47 +162,65 @@
     <div class="card-body">
         <div class="form-group">
           <div class="form-row">
-            <div class="col-md-6">
+            <div class="col-md-4">
               <label for="exampleInputName">Pharmacy Name</label>
               <br>
-              <script>JSON.parse(localStorage.getItem('formData'))[0].value</script>
+              <script>
+              var PharmacyName = JSON.parse(localStorage.getItem('formData'))[0].value
+              document.write(PharmacyName);
+              </script>
             </div>
-            <div class="col-md-6">
-              <label for="exampleInputName">First name</label>
-              <input class="form-control" id="exampleInputFirstName" type="text" aria-describedby="nameHelp" placeholder="Enter first name">
+            <div class="col-md-4">
+              <label for="exampleInputName">Pharmacist Name</label>
+              <br>
+              <script>
+              var PharmacistName = JSON.parse(localStorage.getItem('formData'))[1].value
+              document.write(PharmacistName);
+              </script>
             </div>
-            <div class="col-md-6">
-              <label for="exampleInputName">First name</label>
-              <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" placeholder="Enter first name">
+            <div class="col-md-4">
+              <label for="exampleInputName">Pharmacy Phone Number</label>
+              <br>
+              <script>
+              var PharmacyPhone = JSON.parse(localStorage.getItem('formData'))[2].value
+              document.write(PharmacyPhone);
+              </script>
             </div>
-            <div class="col-md-6">
-              <label for="exampleInputLastName">Last name</label>
-              <input class="form-control" id="exampleInputLastName" type="text" aria-describedby="nameHelp" placeholder="Enter last name">
+            <div class="col-md-3">
+              <label for="exampleInputName">Primary Emergency Contact Name</label>
+              <br>
+              <script>
+              var PECName = JSON.parse(localStorage.getItem('formData'))[3].value
+              document.write(PECName);
+              </script>
+            </div>
+            <div class="col-md-3">
+              <label for="exampleInputName">Primary Emergency Contact Number</label>
+              <br>
+              <script>
+              var PECNum = JSON.parse(localStorage.getItem('formData'))[4].value
+              document.write(PECNum);
+              </script>
+            </div>
+            <div class="col-md-3">
+              <label for="exampleInputName">Secondary Emergency Contact Name</label>
+              <br>
+              <script>
+              var SECName = JSON.parse(localStorage.getItem('formData'))[5].value
+              document.write(SECName);
+              </script>
+            </div>
+            <div class="col-md-3">
+                <label for="exampleInputName">Secondary Emergency Contact Number</label>
+                <br>
+                <script>
+                var SECNum = JSON.parse(localStorage.getItem('formData'))[6].value
+                document.write(SECNum);
+                </script>
             </div>
           </div>
         </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Enter email">
-        </div>
-        <div class="form-group">
-          <div class="form-row">
-            <div class="col-md-6">
-              <label for="exampleInputPassword1">Password</label>
-              <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
-            </div>
-            <div class="col-md-6">
-              <label for="exampleConfirmPassword">Confirm password</label>
-              <input class="form-control" id="exampleConfirmPassword" type="password" placeholder="Confirm password">
-            </div>
-          </div>
-        </div>
-        <a class="btn btn-primary btn-block" href="login.html">Register</a>
-      <div class="text-center">
-        <a class="d-block small mt-3" href="login.html">Login Page</a>
-        <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
       </div>
-    </div>
 
 <!-- /.CONTENT---------------------------------------------------------------------------------------------------------------------->
     <!-- /.content-wrapper-->
@@ -241,14 +259,14 @@
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Page level plugin JavaScript-->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+
     <script src="vendor/datatables/jquery.dataTables.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
     <!-- Custom scripts for this page-->
-    <script src="js/sb-admin-datatables.min.js"></script>
-    <script src="js/sb-admin-charts.min.js"></script>
+    <!-- <script src="js/sb-admin-datatables.min.js"></script>
+    <script src="js/sb-admin-charts.min.js"></script> -->
   </div>
 </body>
 
