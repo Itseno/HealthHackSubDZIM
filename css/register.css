@@ -70,3 +70,12 @@ input::-webkit-input-placeholder {
 	font-size: 11px;
 	text-align: center;
 }
+
+.fonto{
+  font-family: Roboto Slab;
+  color: #212529;
+}
+
+.CenterH1{
+  text-align: center;
+}
