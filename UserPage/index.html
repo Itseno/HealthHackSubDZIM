@@ -18,6 +18,7 @@
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="UserData.js"></script>
 </head>
 
@@ -157,13 +158,6 @@
       </div>
 <!-- /.CONTENT-------------------------------------------------------------------------------------------------------------------------->
 
-<script>
-
-document.write("Hello");
-
-</script>
-
-
     <div class="card-header">Home</div>
     <div class="card-body">
         <div class="form-group">
@@ -171,7 +165,7 @@ document.write("Hello");
             <div class="col-md-6">
               <label for="exampleInputName">Pharmacy Name</label>
               <br>
-              <script>document.write(#PharmacyName);</script>
+              <script>JSON.parse(localStorage.getItem('formData'))[0].value</script>
             </div>
             <div class="col-md-6">
               <label for="exampleInputName">First name</label>
