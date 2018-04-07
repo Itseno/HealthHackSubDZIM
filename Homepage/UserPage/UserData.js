@@ -6,7 +6,7 @@ var UserI = function(){
   localStorage.setItem('formData', JSON.stringify(x));
 }
 
-window.onload = UserI();
+
 
 var saveToLocalStorage = function (){
   PharmacyName = localStorage.getItem(x[0]);
