@@ -17,6 +17,7 @@
   <!-- Page level plugin CSS-->
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
+  <link href="css/style.css" rel="stylesheet">
   <link href="css/sb-admin.css" rel="stylesheet">
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="UserData.js"></script>
@@ -156,62 +157,68 @@
           </div>
         </div>
       </div>
+
+
 <!-- /.CONTENT-------------------------------------------------------------------------------------------------------------------------->
 
     <div class="card-header">Home</div>
     <div class="card-body">
         <div class="form-group">
+          <div class="centering">
           <div class="form-row">
-            <div class="col-md-4">
-              <label for="exampleInputName">Pharmacy Name</label>
+            <div class="col-md-4 ee">
+              <label for="exampleInputName">
+                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Pharmacy Name</button>
+              </label>
               <br>
               <script>
               var PharmacyName = JSON.parse(localStorage.getItem('formData'))[0].value
               document.write(PharmacyName);
               </script>
             </div>
-            <div class="col-md-4">
-              <label for="exampleInputName">Pharmacist Name</label>
+            <br>
+            <div class="col-md-4 ee">
+              <label for="exampleInputName"><button class="btn btn-secondary" type="button" data-dismiss="modal">Pharmacist Name</button></label>
               <br>
               <script>
               var PharmacistName = JSON.parse(localStorage.getItem('formData'))[1].value
               document.write(PharmacistName);
               </script>
             </div>
-            <div class="col-md-4">
-              <label for="exampleInputName">Pharmacy Phone Number</label>
+            <div class="col-md-4 ee">
+              <label for="exampleInputName"><button class="btn btn-secondary" type="button" data-dismiss="modal">Pharmacy Phone Number</button></label>
               <br>
               <script>
               var PharmacyPhone = JSON.parse(localStorage.getItem('formData'))[2].value
               document.write(PharmacyPhone);
               </script>
             </div>
-            <div class="col-md-6">
-              <label for="exampleInputName">Primary Emergency Contact Name</label>
+            <div class="col-md-6 ee">
+              <label for="exampleInputName"><button class="btn btn-secondary" type="button" data-dismiss="modal">Primary Emergency Contact Name</button></label>
               <br>
               <script>
               var PECName = JSON.parse(localStorage.getItem('formData'))[3].value
               document.write(PECName);
               </script>
             </div>
-            <div class="col-md-6">
-              <label for="exampleInputName">Primary Emergency Contact Number</label>
+            <div class="col-md-6 ee">
+              <label for="exampleInputName"><button class="btn btn-secondary" type="button" data-dismiss="modal">Primary Emergency Contact Number</button></label>
               <br>
               <script>
               var PECNum = JSON.parse(localStorage.getItem('formData'))[4].value
               document.write(PECNum);
               </script>
             </div>
-            <div class="col-md-6">
-              <label for="exampleInputName">Secondary Emergency Contact Name</label>
+            <div class="col-md-6 ee">
+              <label for="exampleInputName"><button class="btn btn-secondary" type="button" data-dismiss="modal">Secondary Emergency Contact Name</button></label>
               <br>
               <script>
               var SECName = JSON.parse(localStorage.getItem('formData'))[5].value
               document.write(SECName);
               </script>
             </div>
-            <div class="col-md-6">
-                <label for="exampleInputName">Secondary Emergency Contact Number</label>
+            <div class="col-md-6 ee" >
+                <label for="exampleInputName"><button class="btn btn-secondary" type="button" data-dismiss="modal">Secondary Emergency Contact Number</button></label>
                 <br>
                 <script>
                 var SECNum = JSON.parse(localStorage.getItem('formData'))[6].value
@@ -219,9 +226,11 @@
                 </script>
             </div>
           </div>
+          </div>
         </div>
       </div>
-
+<a class="centering btn btn-primary" onclick= href=".html"><div class="whiteColor">Add Medication</div></a>
+    <br>
 <!-- /.CONTENT---------------------------------------------------------------------------------------------------------------------->
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">

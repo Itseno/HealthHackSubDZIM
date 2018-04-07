@@ -1,0 +1,14 @@
+.whiteColor{
+  color: white;
+}
+
+.centering{
+  text-align: center;
+  margin: 0 auto;
+  float: left;
+  margin-right: 10px;
+}
+
+.ee{
+  padding: 12px;
+}
