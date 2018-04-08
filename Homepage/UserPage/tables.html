@@ -16,6 +16,7 @@
   <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
+  <script src="MedicineData.js"></script>
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -101,10 +102,30 @@
                   <td>Schnucks</td>
                 </tr>
                 <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
+                  <td>
+                    <script>
+                    var MedicineName = JSON.parse(localStorage.getItem('MedData'))[0].value
+                    document.write(MedicineName);
+                    </script>
+                </td>
+                  <td>
+                    <script>
+                    var Manufacturer = JSON.parse(localStorage.getItem('MedData'))[1].value
+                    document.write(Manufacturer);
+                    </script>
+                  </td>
+                  <td>
+                    <script>
+                    var MedDesc = JSON.parse(localStorage.getItem('MedData'))[2].value
+                    document.write(MedDesc);
+                    </script>
+                  </td>
+                  <td>
+                    <script>
+                    var datetime = JSON.parse(localStorage.getItem('MedData'))[3].value
+                    document.write(datetime);
+                    </script>
+                  </td>
                 </tr>
                 <tr>
                   <td></td>
