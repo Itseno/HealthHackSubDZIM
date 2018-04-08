@@ -11,20 +11,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DZIM User Page</title>
 
-<script type="text/javascript" src="/scripts/jquery.min.js"></script>
-<script type="text/javascript" src="/scripts/moment.min.js"></script>
-<script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
-<script type="text/javascript" src="/scripts/bootstrap-datetimepicker.*js"></script>
 
 
   <!-- Bootstrap core CSS-->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom fonts for this template-->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href=css/jquery.datetimepicker.min.css>
   <!-- Custom styles for this template-->
   <link href="css/sb-admin.css" rel="stylesheet">
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="UserData.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.datetimepicker.full.js"></script>
+<script src="MedicineData.js"></script>
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -89,7 +88,7 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">Home</a>
+          <a href="index.html">Dashboard</a>
         </li>
         <li class="breadcrumb-item active">Medicine</li>
       </ol>
@@ -98,41 +97,33 @@
           <!--Info Here-->
               <div class="card-header">Add a Prescription</div>
               <div class="card-body">
-                <form id="UserInfo" action="userpage.html">
+                <form id="MedicineInfo" action="Medicine.html">
                   <div class="form-group">
-                    <label for="exampleInputName">Medicine name</label>
-                    <input name="PharmacyName" class="form-control" id="MedicineName" type="text" aria-describedby="nameHelp" placeholder="Enter Medicine Name">
+                    <label for="exampleInputName">Medicine Name</label>
+                    <input name="MedicineName" class="form-control" id="MedicineName" type="text" aria-describedby="nameHelp" placeholder="Enter Medicine Name">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputName">Medicine Manufacturer</label>
-                    <input name="PharmicistName" class="form-control" id="PharmacistName" type="text" aria-describedby="nameHelp" placeholder="Enter Medicine Manufacturer">
+                    <input name="Manufacturer" class="form-control" id="Manufacturer" type="text" aria-describedby="nameHelp" placeholder="Enter Medicine Manufacturer">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputName">Dosage</label>
-                    <div class="container">
-                            <div class="row">
-                                    <div class='col-sm-6'>
-                                        <div class="form-group">
-                                            <div class='input-group date' id='datetimepicker1'>
-                                                <input type='text' class="form-control" />
-                                                <span class="input-group-addon">
-                                                    <span class="glyphicon glyphicon-calendar"></span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <script type="text/javascript">
-                                        $(function () {
-                                            $('#datetimepicker1').datetimepicker();
-                                        });
-                                    </script>
-                                </div>
-                              </div>
+                    <label for="exampleInputName">Medicine Description</label>
+                    <input name="Manufacturer" class="form-control" id="MedDesc" type="text" aria-describedby="nameHelp" placeholder="Enter Medicine Desscription">
                   </div>
-
+                  <div class="form-group">
+                    <label for="exampleInputName">Time of Dosage</label>
+                    <div class="container">
+                        <input name="Time" id="datetime">
+                        <script>
+                        $("#datetime").datetimepicker();{
+                          step: 5
+                        };
+                        </script>
+                    </div>
               </div>
 
-
+              <a class="btn btn-primary" onclick=Med()>Submit</a>
+            </form>
         </div>
       </div>
     </div>
